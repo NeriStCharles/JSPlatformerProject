@@ -576,9 +576,7 @@ function runGame(plans, Display) {
 		runLevel(new Level(plans[n]), Display, function(status) {
 			if (status == "lost") {
 				if (gemCounter > n) {
-					console.log("GC before sub: " + gemCounter);
 					gemCounter -= 1;
-					console.log("GC after sub: " + gemCounter);
 				}
 				startLevel(n);
 			}
